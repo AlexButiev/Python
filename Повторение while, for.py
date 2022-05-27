@@ -164,39 +164,40 @@ for hours in range(24):
             print(hours, ':', minutes, ':', seconds)
 # _____________________________________________
 
-# Эта программа усредняет оценки. Она запрашивает количество
-# студентов и количество оценок в расчете на студента.
-# Получить количество студентов.
-num_students = int(input('Скoлькo у вас студентов? '))
-# Получить количество оценок в расчете на студента.
-num_test_scores = int(input('Cкoлькo оценок в расчете на студента? '))
-# Определить средний балл каждого студента.
-for student in range(num_students):
-    # Инициализировать накопитель оценок:
-    total = 0.0
-    # Получить оценки за лабораторные работы.
-    print('Номер студента', student + 1)
-    print('-----------------')
-    for test_num in range(num_test_scores):
-        print('Номер лабораторной работы', test_num + 1, end='')
-        score = float(input(': ',))
-        total += score
-    # Расчитать средний балл этого студента
-    average = total / num_test_scores
-    # Показать средний балл
-    print('Средний балл студента', student + 1, 'составляет', format(average, '.1f'))
-    print()
-# _____________________________________________
+# # Эта программа усредняет оценки. Она запрашивает количество
+# # студентов и количество оценок в расчете на студента.
+# # Получить количество студентов.
+# num_students = int(input('Скoлькo у вас студентов? '))
+# # Получить количество оценок в расчете на студента.
+# num_test_scores = int(input('Cкoлькo оценок в расчете на студента? '))
+# # Определить средний балл каждого студента.
+# for student in range(num_students):
+#     # Инициализировать накопитель оценок:
+#     total = 0.0
+#     # Получить оценки за лабораторные работы.
+#     print('Номер студента', student + 1)
+#     print('-----------------')
+#     for test_num in range(num_test_scores):
+#         print('Номер лабораторной работы', test_num + 1, end='')
+#         score = float(input(': ',))
+#         total += score
+#     # Расчитать средний балл этого студента
+#     average = total / num_test_scores
+#     # Показать средний балл
+#     print('Средний балл студента', student + 1, 'составляет', format(average, '.1f'))
+#     print()
+# # _____________________________________________
+#
+# columns = int(input('Сколько столбиков: '))
+# rows = int(input('Сколько рядов: '))
+# for row in range(rows):
+#     for column in range(columns):
+#         print('*', end='')
+#     print()
+# # _____________________________________________
+#
+# for row in range(10):
+#     for column in range(row + 1):
+#         print('*', end='')
+#     print()
 
-columns = int(input('Сколько столбиков: '))
-rows = int(input('Сколько рядов: '))
-for row in range(rows):
-    for column in range(columns):
-        print('*', end='')
-    print()
-# _____________________________________________
-
-for row in range(10):
-    for column in range(row + 1):
-        print('*', end='')
-    print()
