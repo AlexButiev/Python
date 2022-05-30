@@ -162,3 +162,59 @@
 #
 # show_name('Kate', 25)               # Позиционный аргумент
 # show_name(name='Kate', age=25)      # Именнованный аргумент
+
+# ##################Глобальные переменные и глобальные константы##################
+### Следует ограничить использование глобальных переменных
+#
+#
+# # Создать глобальную переменную
+# my_value = 10
+#
+# # Функция show_value печатает значение глобальной переменной
+#
+#
+# def show_value():
+#     print(my_value)
+#
+# show_value()
+#
+# # Если нужно, чтобы инструкция внутри функции присваивала значение
+# # глобальной переменной, то требуется дополнительный шаг:
+#
+# # Создать глобальную переменную:
+# number = 0
+#
+# def main():
+#     global number               # используем слово "global", чтобы объявить переменную number.
+#     number = int(input('введите число: '))
+#     show_number()
+#
+#
+# def show_number():
+#     print('Вы ввели число', number)
+#
+# print('Значение number вне функции равно', number)
+
+# # Глобальные КОНСТАНТЫ
+#
+# # Используем глобальную константу
+# # Ставка взноса компании
+# CONTRIBUTION_RATE = 0.05
+#
+# def main():
+#     gross_pay =float(input('Введите ЗП: '))
+#     bonus = float(input('Введите сумму премий: '))
+#     show_pay_contrib(gross_pay)
+#     show_bonus_contrib(bonus)
+#
+# def show_pay_contrib(gross):
+#     contrib = gross * CONTRIBUTION_RATE
+#     print('Взнос исходя из ЗП $', format(contrib, ',.2f'), sep='')
+#
+#
+# def show_bonus_contrib(bonus):
+#     contrib = bonus * CONTRIBUTION_RATE
+#     print('Взнос исходя из премий $', format(contrib, ',.2f'), sep='')
+#
+#
+# main()
